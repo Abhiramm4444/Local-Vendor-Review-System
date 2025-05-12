@@ -1,0 +1,146 @@
+.vendor-detail {
+  max-width: 480px;
+  margin: 30px auto;
+  padding: 24px 18px;
+  background: linear-gradient(145deg, #292929, #1c1c1c);
+  border-radius: 22px;
+  box-shadow: 10px 10px 30px #111111, -10px -10px 30px #444444;
+  color: #d9a873;
+  user-select: none;
+  animation: fadeInSlideUp 0.7s ease forwards;
+}
+
+.vendor-name {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #b79f52;
+  text-shadow: 0 0 8px #b79f5299;
+  margin-bottom: 8px;
+}
+
+.vendor-photo {
+  width: 100%;
+  max-height: 280px;
+  border-radius: 20px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 0 25px #b79f5299;
+  transition: transform 0.3s ease;
+  user-select: none;
+}
+
+.vendor-photo:hover {
+  transform: scale(1.03);
+}
+
+.vendor-address,
+.vendor-phone,
+.vendor-category {
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+  color: #cfc393cc;
+  font-weight: 500;
+}
+
+.reviews-section {
+  margin-top: 24px;
+}
+
+.reviews-section h3 {
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: #b79f52;
+  text-shadow: 0 0 10px #b79f5299;
+}
+
+.no-reviews {
+  font-style: italic;
+  font-weight: 500;
+  color: #bbb;
+  margin-bottom: 8px;
+}
+
+.reviews-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 26px 0;
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.review-item {
+  background: linear-gradient(145deg, #1c1c1c, #2e2e2e);
+  padding: 14px 18px;
+  border-radius: 16px;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  box-shadow: 5px 5px 12px #111111, -5px -5px 12px #444444;
+  color: #d9a873;
+  user-select: text;
+  animation: fadeInUp 0.4s ease forwards;
+}
+
+.review-rating {
+  font-weight: 700;
+  color: #cfc393cc;
+  margin-bottom: 4px;
+}
+
+.review-comment {
+  font-style: italic;
+  margin-bottom: 4px;
+  color: #e3d899cc;
+}
+
+.review-date {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #999979cc;
+  text-align: right;
+}
+
+@keyframes fadeInSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reviews-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.reviews-list::-webkit-scrollbar-thumb {
+  background-color: rgba(183, 159, 82, 0.6);
+  border-radius: 8px;
+}
+
+.reviews-list:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(183, 159, 82, 0.9);
+}
+
+@media (max-width: 450px) {
+  .vendor-detail {
+    margin: 15px 12px;
+    padding: 20px 16px;
+  }
+
+  .review-item {
+    font-size: 0.85rem;
+  }
+}
